@@ -7,4 +7,4 @@ RUN apt-get update && \
     libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
     ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 
-RUN npm install -g puppeteer
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install -g puppeteer
